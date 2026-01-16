@@ -1,0 +1,90 @@
+# OOP Basics Codes 
+
+## Day1 
+## (Class and Object creation)
+Code 1
+
+class Student{
+    //logic
+    int rollNumber;
+    String name;
+}
+public class Main{
+    public static void main(String [] args){
+        Student obj = new Student();
+        obj.rollNumber = 1;
+        obj.name = "Aditya Sahani";
+        System.out.println(obj.rollNumber);
+        System.out.println(obj.name);
+    }
+}
+-------------------------------------------
+##  Constructors -(parameterless)
+Code 2
+
+class Student {
+    // logic
+    int rollNumber;
+    String name;
+    
+    Student() {
+       rollNumber = 1;
+       name = "Aditya Sahani";
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		Student obj = new Student();
+		
+		System.out.println(obj.rollNumber);
+		System.out.println(obj.name);
+	}
+}
+
+---------------------------------------------------
+
+## Constructors ((parameterized)
+Code 3
+
+class Student {
+    // logic
+    int rollNumber;
+    String name;
+    Student(int i, String n) {
+        rollNumber = i;
+        name = n;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		Student obj = new Student(1,"Aditya Sahani");
+		
+		System.out.println(obj.rollNumber);
+		System.out.println(obj.name);
+	}
+}
+-----------------------------------------------------
+
+## Attributes (self vs local variables)
+Code 4
+class Student {
+    
+    int rollNumber; // instance variable
+
+    void setId(int rollNumber) { // local variable 
+        this.rollNumber = rollNumber; 
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		Student obj = new Student();
+		obj.setId(1);
+		System.out.println(obj.rollNumber);
+	}
+}
