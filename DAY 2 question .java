@@ -19,7 +19,6 @@ public class Main {
     }
 }
 
-
 // corrected
 class Automata {
     int states;
@@ -81,5 +80,6 @@ public class Main {
         A.display();
     }
 }
+
 
 
