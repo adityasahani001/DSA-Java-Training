@@ -39,6 +39,7 @@ public class Main {
     }
 }
 
+
 // Example 2 — Parameterized Constructor
 // Wrong
 class Automata {
