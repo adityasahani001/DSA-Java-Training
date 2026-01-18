@@ -62,6 +62,7 @@ public class Main {
     }
 }
 
+
 // Correct
 class Automata {
     int states;
