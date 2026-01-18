@@ -1,3 +1,6 @@
+Automa Debugging 
+
+
 // Example 1 — Parameterless Constructor
 // wrong
 class Automata {
