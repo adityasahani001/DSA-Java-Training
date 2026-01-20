@@ -1,0 +1,68 @@
+// Encapsualtion means wrapping up the data (functions, Methods, variables, object) 
+// into a single unit called class and restrictions of the data access using access modifiers
+// public private protected
+// need for Encapsualtion 
+// -- data security 
+// -- Controlled access 
+// -- validation before the data change 
+// -- Code maintainability 
+
+// Code 1 -- Getters and setters 
+
+class BankAccount {
+    int bankBalance;
+    // setters 
+    public void setBalance(int amount) {
+        if(amount >= 0) {
+           bankBalance = amount;
+        } else {
+            System.out.println("Invalid amount");
+        }
+    }
+    // getters 
+    public int getBalance() {
+        return bankBalance;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    BankAccount acc = new BankAccount();
+	    acc.setBalance(5000);
+	    System.out.println(acc.getBalance());
+	}
+}
+
+---------------------------------------------------------------------------------
+
+// Abstraction 
+// Abstraction means hiding the implementation and showing only 
+// the neccessary essentials features 
+// abstract class -- class cannot be initialized and it is formed using absract keyword
+// abstract method -- no body only the implementation is there
+
+// Code 2 -- 
+abstract class Vehicle {
+    abstract void start();
+}
+
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car starts");
+    }
+}
+class Bike extends Vehicle {
+    void start() {
+        System.out.println("Bike starts");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Vehicle v1 = new Car();
+        Vehicle v2 = new Bike();
+        v1.start();
+        v2.start();
+    }
+}
