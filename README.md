@@ -1,4 +1,4 @@
-# Java DSA Daily Training Repository
+# DSA Java Daily Training Repository
 
 Welcome to my Java DSA Training Classes Repository!
 This repository contains my daily class code, practice problems, and concept implementations using Java.
