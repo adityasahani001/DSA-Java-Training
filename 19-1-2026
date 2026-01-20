@@ -24,6 +24,7 @@ public class Main
 
 Code 2 
 // reference variables
+
 class Student {
     int marks = 80;
 }
@@ -56,6 +57,7 @@ public class Main
 
 Code 4
 // dereferencing
+
 class Student {
     int marks = 80;
 }
@@ -101,6 +103,7 @@ public class Main
 
 Code 6
 // Lists of objects 
+
 import java.util.*;
 class Student {
     int id;
@@ -130,6 +133,7 @@ public class Main
 Code 7
 Dictionaries of Objects 
 // Dictionaries of Objects 
+
 import java.util.*;
 class Student {
     int id;
