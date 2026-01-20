@@ -43,25 +43,25 @@ public class Main
 // abstract method -- no body only the implementation is there
 
 // Code 2 -- 
-abstract class Vehicle {
+abstract  class Vehical {
     abstract void start();
+
 }
 
-class Car extends Vehicle {
-    void start() {
-        System.out.println("Car starts");
+class Car extends Vehical{
+    void start(){
+        System.out.println("Car started");
     }
 }
-class Bike extends Vehicle {
-    void start() {
-        System.out.println("Bike starts");
+class Bike extends Vehical{
+    void start(){
+        System.out.println("Bike started");
     }
 }
-
-class Main {
-    public static void main(String[] args) {
-        Vehicle v1 = new Car();
-        Vehicle v2 = new Bike();
+class Main{
+    public static void main(String args[]){
+        Vehical v1=new Car();
+        Vehical v2 = new Bike();
         v1.start();
         v2.start();
     }
