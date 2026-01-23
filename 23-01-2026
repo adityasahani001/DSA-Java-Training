@@ -21,3 +21,33 @@ public class Main
 		
 	}
 }
+----------------------------------------------------------------
+
+
+// Multilevel inheritance 
+//Code 2:-
+
+class Vehicle { // parent 
+    void start() {
+        System.out.println("Vehicle Starts");
+    }
+}
+class Bike extends Vehicle { // child
+    void drive() {
+        System.out.println("Bike running");
+    }
+}
+class Indicator extends Bike { // child
+    void Indicate(){
+        System.out.println("Multilevel");
+    }}
+public class Main
+{
+	public static void main(String[] args) {
+	    Indicator b = new Indicator();
+	    b.start();
+	    b.drive();
+	    b.Indicate();
+		
+	}
+}
