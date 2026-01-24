@@ -2,7 +2,8 @@
 // an interface in a java is an abstract type that defines a set of 
 // methods a class must implements 
 // Multiple Inheritance using Interfaces
-Code 1:-
+
+// Code 1:-
 
 interface tv {
     void watchingTv();
@@ -32,3 +33,31 @@ public class Main
 }
 
 // student class inherit multiple interfaces
+
+------------------------------------------------------------------------------------------------------
+
+// Inheriting the constructor 
+// constructor can be inherited usign super keyword
+
+// Code 2:- 
+
+class Person {
+    Person(String name) {
+        System.out.println("Person Name: " + name);
+    }
+}
+
+class CollegeStudent extends Person {
+    CollegeStudent (String name) {
+        super(name); // parent class constructor called
+        System.out.println("College student constructor called"); // child class constructor called
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		CollegeStudent std = new CollegeStudent("Aman");
+		
+	}
+}
