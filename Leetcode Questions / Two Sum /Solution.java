@@ -1,0 +1,54 @@
+DSA Problems on arrays 
+
+# 1. Leetcode 1 
+Problem Name: Two Sum 
+[Link](https://leetcode.com/problems/two-sum/)
+Solution: 
+Brute Force 
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        // LOGIC 
+        int[] result = new int[2];
+        for(int i = 0; i < nums.length -1; i++) {
+            for(int j = i + 1; j < nums.length; j++) {
+                if(nums[i] + nums[j] == target) {
+                    return new int[] {i, j};
+                }
+            }
+        }
+        return result;
+    }
+}
+// TC:- O(N^2)
+// SC:- O(1)
+
+
+Optimal Approach
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        // LOGIC 
+        int [] result = new int[2];
+        // default value
+        result[0] = result[1] = -1;
+
+       // key value pair store 
+       HashMap<Integer, Integer> map = new HashMap<>();
+
+       for(int i = 0; i < nums.length; i++) {
+            int currently = nums[i];
+            int compliment = target - currently;
+
+        if(map.containsKey(compliment)) {
+            result[0] = map.get(compliment);
+            result[1] = i;
+            return result;
+        }  
+        map.put(nums[i], i);  
+       }
+       return result;
+    }
+}
+
+// TC:- O(N)
+// SC:- O(N)
