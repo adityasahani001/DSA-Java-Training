@@ -29,7 +29,7 @@ class Solution {
         if(count > nums.length / 2){
             return candidate;
         } else return -1;
-        
+    
     }
 }
 TC = O(N)
@@ -45,8 +45,10 @@ class Solution {
 TC = O(NLogN)
 SC = O(1)
 
+-------------------------------------------------------------------------------------------------------
 Leetcode 53
 Brute Force 
+
 class Solution {
     public int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
