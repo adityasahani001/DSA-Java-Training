@@ -10,7 +10,7 @@ class Solution {
         //         j++;
         //     }
         // }
-
+     
         // above code is also correct
         
         int index = 0;
