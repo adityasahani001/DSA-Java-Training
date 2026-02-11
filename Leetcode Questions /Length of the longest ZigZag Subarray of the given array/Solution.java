@@ -21,7 +21,7 @@ class Main {
             return max; // return the ans
     }
     // [4 5 3 4] [5 8 7 9 6 13 12 14 11]
-
+	
 	public static void main(String[] args) {
 	    int arr[] = {4,5,3,4,5,8,7,9,6,13,12,14,11};
 	    int n = arr.length;
