@@ -18,7 +18,7 @@ class Solution {
             if(nums[i]!=0){
                 nums[index]= nums[i];
                 index++;
-            }
+            }     
         }
         while(index<nums.length){
             nums[index]=0;
