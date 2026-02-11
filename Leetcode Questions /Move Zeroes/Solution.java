@@ -23,8 +23,7 @@ class Solution {
         while(index<nums.length){
             nums[index]=0;
             index++;
-        }
-        
+        }  
     }
 }
       
