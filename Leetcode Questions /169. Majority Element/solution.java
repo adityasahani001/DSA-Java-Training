@@ -1,0 +1,46 @@
+Leetcode 169 
+Majority Element n/2
+
+Optimal 
+class Solution {
+    public int majorityElement(int[] nums) {
+        int candidate = -1;
+        int vote = 0;
+
+        for(int i = 0; i < nums.length; i++) {
+            if(vote == 0) {
+                candidate = nums[i];
+                vote = 1;
+            } else {
+                if(nums[i] == candidate) {
+                    vote++;
+                } else {
+                    vote--;
+                }
+            }
+        }
+        int count = 0;
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] == candidate){
+                count++;
+            }
+        }
+        
+        if(count > nums.length / 2){
+            return candidate;
+        } else return -1;
+        
+    }
+}
+TC = O(N)
+SC = O(1)
+
+Better
+class Solution {
+    public int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        return nums[nums.length / 2];
+    }
+}
+TC = O(NLogN)
+SC = O(1)
