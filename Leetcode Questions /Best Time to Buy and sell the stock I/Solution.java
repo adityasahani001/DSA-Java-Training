@@ -1,4 +1,4 @@
-//Leetcode 121 Problem statement solution
+// Leetcode 121 Problem statement solution
 
 import java.util.*;
 class Solution {
