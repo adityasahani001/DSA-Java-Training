@@ -1,0 +1,44 @@
+LeetCode 496
+Next Greater Element 
+class Solution {
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        int n = nums1.length;
+        int m = nums2.length;
+
+        int[] result = new int[n];
+
+        Stack<Integer> st = new Stack<>();
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for(int num : nums2) {
+            while(!st.isEmpty() && st.peek() < num) {
+                map.put(st.pop(), num);
+            }
+            st.push(num);
+        }
+        for(int i = 0; i < n; i++) {
+            result[i] = map.getOrDefault(nums1[i], -1);
+        }
+        return result;
+    }
+}
+
+LeetCode 739 
+Daily Temprature 
+class Solution {
+    public int[] dailyTemperatures(int[] temperatures) {
+
+        int length = temperatures.length;
+        int [] result = new int[length];
+        Stack <Integer> index = new Stack<>();
+
+        for (int i = length -1; i >= 0; i--){
+             while(!index.isEmpty() && temperatures[i] >= temperatures[index.peek()])
+                index.pop();
+        if(!index.isEmpty())
+            result[i] = index.peek() - i ;
+            index.push(i);
+        }
+        return result;
+    }
+}
