@@ -17,7 +17,8 @@ class Solution {
                 }    
             }
         }
-        while(!st.isEmpty()) {
+       
+while(!st.isEmpty()) {
             int index = st.pop();
             ans.replace(index, index+1, " ");
         }
