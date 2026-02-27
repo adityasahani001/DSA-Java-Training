@@ -1,5 +1,6 @@
 LeetCode 1249
 Minimum Remove To make Valid Paranthesis
+
 class Solution {
     public String minRemoveToMakeValid(String s) {
         StringBuilder ans = new StringBuilder(s);
