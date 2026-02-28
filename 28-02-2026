@@ -22,3 +22,27 @@ class StockSpanner {
  * StockSpanner obj = new StockSpanner();
  * int param_1 = obj.next(price);
  */
+
+----------------------------------------------------------------------------------------------------
+
+Leetcode 84. Largest Rectangle in Histogram
+
+class Solution {
+    public int largestRectangleArea(int[] heights) {
+
+        // logic to find previous smaller element indices
+        public int[] prviousSmaller(int[] arr){
+            int n = arr.length;
+            int[] prevS = new int[n];
+            Array.fills(prevS, -1);
+
+            Stack<Integer> st = new Stack<>();
+            for(i =0; i<n ; i++){
+                while(!st.isEmpty() && arr[i]< arr[st.peek()]){
+                    st.pop();
+                }
+            }
+        }
+        
+    }
+}
